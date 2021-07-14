@@ -18,9 +18,9 @@ export const Routes = () => {
          <Router>
             <NavBar/>
             <Switch>
-               <Route exact path='/css-module-practice/' component={Index} ></Route>
-               <Route  path='/css-module-practice/SignIn' component={SignIn}></Route>
-               <Route  path='/css-module-practice/SignUp' component={SignUp}></Route>
+               <Route exact path='/' component={Index} ></Route>
+               <Route  path='/SignIn' component={SignIn}></Route>
+               <Route  path='/SignUp' component={SignUp}></Route>
                <Route component={NotFund}></Route>
             </Switch>
          </Router>

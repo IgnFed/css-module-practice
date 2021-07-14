@@ -10,7 +10,7 @@ export const NavBar = () => {
 
          <nav className={NavBarStyle.navBarContainer}>
             <div className={NavBarStyle.navBarLogoElements}>
-               <Link to='/css-module-practice/'>
+               <Link to='/'>
                   <div className={NavBarStyle.logoImgContainer}><img src={Logo} alt="" /></div>
                   <div className={NavBarStyle.logoTitleContainer}><h2>Video Storage!</h2></div>
                </Link>
