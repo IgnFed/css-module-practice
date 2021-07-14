@@ -1,0 +1,104 @@
+div.cardContainerLeft,
+div.cardContainerRight
+{
+   position: relative;
+   display: grid;
+}
+
+div.cardContainerLeft {
+   grid-template-columns: .6fr 1fr;
+}
+
+div.cardContainerRight {
+   grid-template-columns: 1fr .6fr;
+}
+
+div.cardContainerLeft::before,
+div.cardContainerRight::before
+{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #00000044;
+   z-index: -1;
+}
+
+div.contentContainer
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 15px 20px;
+}
+
+div.title
+{
+   font-size: 26px;
+   margin-bottom: 20px;
+   color: #fff;
+   z-index: 20;
+}
+
+div.text
+{
+   font-weight: 500;
+   font-size: 21px;
+   padding: 0 10px;
+   z-index: 20;
+   color: #fff;
+}
+
+div.imgContainer
+{
+   width: 100%;
+   height: 100%;
+}
+
+div.imgContainer > img
+{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+
+@media (max-width: 785px)
+{
+   div.cardContainerLeft,
+   div.cardContainerRight
+   {
+      position: relative;
+      display:inline-block;
+      padding: 50px 0;
+   }
+
+   div.cardContainerLeft::before,
+   div.cardContainerRight::before {
+      display: none;
+   }
+
+   div.imgContainer {
+      position: absolute;
+      top: 0;
+      left: 0;   
+      width: 100%;
+   }
+   
+   div.imgContainer::before
+   {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: .7;
+      z-index: 2;
+   }
+
+   div.imgContainer>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+} 

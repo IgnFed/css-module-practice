@@ -1,0 +1,147 @@
+div.profileContainer 
+{
+   position: fixed;
+   right: 40px;
+   top: 30px;
+   z-index: 99999;
+}
+
+div.profileContainer:hover 
+{
+   height: 130px;
+}
+
+div.imgContainer
+{
+   width: 100px;
+   height: 100px;
+}
+
+div.imgContainer img 
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+
+/*<--   Options Container  -->*/
+
+div.options 
+{
+   position: absolute;
+   top: calc(100% - 90px);
+   margin: 45px 0;
+   background: #81959f;
+   opacity: 0;
+   visibility: hidden;
+   transition: top .4s, opacity .4s;
+}
+
+div.profileContainer:hover div.options 
+{
+   top: calc(100% - 50px);
+   visibility: visible;
+   opacity: 1;
+}
+
+div.options::before 
+{
+   content: '';
+   position: absolute;
+   background: #81959f;
+   width: 20px;
+   left: 40%;
+   top: 7px;
+   height: 20px;
+   transform: rotateZ(45deg) translate(-55%, -50%);
+   z-index: -1;
+}
+
+/*<--  Options items   -->*/
+
+div.options ul > li
+{
+   margin: 25px 0;
+   padding: 10px 0;
+   width: 100px;
+   text-align: center;
+}
+
+div.options ul>li:hover
+{
+   transition: background-color .4s;
+   background-color: antiquewhite;
+}
+
+
+/*<--  ::Before  &&  ::After > Options Items Elements <  -->*/
+
+div.profileContainer div.options ul>li::before,
+div.profileContainer div.options ul>li::after 
+{
+   content: '';
+   position: absolute;
+   background-color: #1d44a7;
+   z-index: 100;
+}
+
+div.profileContainer div.options ul>li::before 
+{
+   left: -60px;
+   transition: left .35s;
+}
+
+div.profileContainer div.options ul>li:nth-child(2)::before,
+div.profileContainer div.options ul>li:nth-child(3)::before 
+{
+   left: -110px;
+}
+
+div.profileContainer div.options ul>li::after 
+{
+   left: -30px;
+   transform: rotate(45deg);
+}
+
+div.profileContainer:hover div.options ul>li:hover::before 
+{
+   margin: -10px;
+   padding: 10px;
+   left: -100px;
+   color: #fff;
+   border-radius: 5px;
+}
+
+div.profileContainer:hover div.options ul>li:hover::after 
+{
+   width: 20px;
+   height: 20px;
+   z-index: -10;
+
+}
+
+div.profileContainer:hover div.options ul>li:hover:nth-child(1):before 
+{
+   content: 'Profile';
+   left: -114px;
+}
+
+div.profileContainer:hover div.options ul>li:hover:nth-child(2):before 
+{
+   content: 'My Videos';
+   left: -156px;
+}
+
+div.profileContainer:hover div.options ul>li:hover:nth-child(3):before 
+{
+   content: 'New Video';
+   left: -158px;
+}
+
+div.profileContainer:hover div.options ul>li:hover:nth-child(4):before 
+{
+   content: 'LogOut';
+   left: -117px;
+}

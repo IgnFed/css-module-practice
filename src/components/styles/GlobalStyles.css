@@ -1,0 +1,50 @@
+*, *::before, *::after, *:visited
+{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   box-sizing: border-box;
+   text-decoration: none;
+   letter-spacing: 6px;
+   outline:none
+}
+
+html,
+body 
+{
+      overflow-x: hidden;
+}
+
+body
+{
+   height: 100vh;
+   width: 100%;
+   background: #445e586f;
+}
+
+i
+{
+   color: #fff;
+   transition: color .3s;
+}
+
+* > li:hover > a > i 
+{
+   color: #000;
+}
+
+section
+{
+   margin: 0 0 100px 0;
+}
+
+::-webkit-scrollbar
+{
+   width: 6px;
+   background-color: #8f8484b4;
+}
+
+::-webkit-scrollbar-thumb 
+{
+   background-color: #000;
+}

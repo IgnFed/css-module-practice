@@ -1,0 +1,100 @@
+div.SignInContainer 
+{
+   background-color: #00f7ff2c;
+   width: 100%;
+   min-height: 100vh;
+}
+
+form
+{
+   position: absolute;
+   padding: 10px 5px;
+   width: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-30%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 1px 1.57px 3px #ccd;
+   background-color: #214083be;
+   border-radius: 12px;
+}
+
+form > h1
+{
+   margin-bottom: 30px;
+}
+
+div.inputContainer 
+{
+   position: relative;
+   width: 100%;
+   margin: 18px 0;
+   text-align: center;
+}
+
+div.inputContainer > input
+{
+   position: relative;
+   width: 70%;
+   background: #b1e1e8;
+   border: none;
+   border-bottom: 2px solid #4b4141bb;
+   box-shadow: 2px 1px 2px #ccd;
+   padding: 16px 6px 10px 8px ;
+   transition: border-bottom .2s , box-shadow .2s .1s;
+}
+
+div.inputContainer>input:focus {
+   border-bottom: 3px solid #de3f5c;
+   box-shadow: 2px 1px 2px #7f7fcbc9;
+}
+
+div.inputContainer>label {
+   position: absolute;
+   top: -26px;
+   left: 16%;
+   transition: color .2s .07s ease-out;
+   user-select: none;
+}
+
+div.inputContainer>input:focus ~ label{
+   color: #fff;
+}
+
+div.inputContainer > button.SignInbtn,
+div.inputContainer>button.SignUpbtn
+{
+   width: 60%;
+   padding: 16px 0;
+   border-radius: 7px;
+   border: none;
+   transition: background-color .2s ease-in-out;
+}
+div.inputContainer>button.SignInbtn
+{
+   background-color: #00ff0dcc;
+}
+
+div.inputContainer>button.SignInbtn:hover {
+   background-color: #1aca0aef;
+}
+
+div.inputContainer>button.SignUpbtn
+{
+   background-color: #ff0037cc;
+}
+
+div.inputContainer>button.SignUpbtn:hover
+{
+   background-color: #ca0a34ef;
+}
+
+@media (max-width: 785px)
+{
+   form
+   {
+      width: 90%;
+   }
+}

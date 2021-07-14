@@ -1,0 +1,41 @@
+div.container 
+{
+   display: flex;
+   width: 100%;
+   height: 100vh;
+   align-items: center;
+}
+
+div.notFoundImgContainer
+{
+   position: relative;
+   left: 20%;
+}
+
+div.notFoundTextContainer
+{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   right: -30%;
+}
+
+div.notFoundTextContainer h3
+{
+   color: #3e2fe6ee;
+   font-size: 80px;
+}
+
+div.notFoundTextContainer p
+{
+   color: #853ee8ee;
+   font-size: 30px;
+}
+
+div.notFoundTextContainer a
+{
+   color: #fb00ff;
+   border-bottom: 2px solid #fb00ff;
+   font-size: 40px;
+
+}
