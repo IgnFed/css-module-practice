@@ -31,6 +31,8 @@ div.imgContainer img
 div.options 
 {
    position: absolute;
+   width: 150px;
+   left: -25px;
    top: calc(100% - 90px);
    margin: 45px 0;
    background: #81959f;
@@ -65,7 +67,7 @@ div.options ul > li
 {
    margin: 25px 0;
    padding: 10px 0;
-   width: 100px;
+   width: 100%;
    text-align: center;
 }
 

@@ -9,7 +9,7 @@ export const NotFund = () => {
 
          <div className={NotFoundStyle.container}>
             <div className={NotFoundStyle.notFoundImgContainer}><img src={Logo} alt=""/></div>
-            <div className={NotFoundStyle.notFoundTextContainer}><h3>Not Found</h3><p>Go Back To: <Link to='/'>Index</Link></p></div>
+            <div className={NotFoundStyle.notFoundTextContainer}><h3>Not Found</h3><p>Go Back To: <Link to='/css-module-practice/'>Index</Link></p></div>
          </div>
 
       </div>

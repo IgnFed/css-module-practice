@@ -10,10 +10,10 @@ export const MiniProfile = () => {
                <div className={MiniProStyle.imgContainer}><img src={kurumi} alt="" /></div>
                <div className={MiniProStyle.options}>
                   <ul>
-                     <li>  <a href="#">   <i className="fas fa-user">         </i>  </a>  </li>
-                     <li>  <a href="#">   <i className="fas fa-photo-video">  </i>  </a>  </li>
-                     <li>  <a href="#">   <i className="fas fa-plus-square">  </i>  </a>  </li>
-                     <li>  <a href="#">   <i className="fas fa-sign-out-alt"> </i>  </a>  </li>
+                     <li>  <a href="#">   <i className="fas fa-user"></i> Profile</a>  </li>
+                     <li>  <a href="#">   <i className="fas fa-photo-video"></i>My Videos</a>  </li>
+                     <li>  <a href="#">   <i className="fas fa-plus-square">  </i>New Video</a>  </li>
+                     <li>  <a href="#">   <i className="fas fa-sign-out-alt"> </i>LogOut</a> </li>
                   </ul>
                </div>
             </div>
